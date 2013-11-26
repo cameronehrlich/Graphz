@@ -10,4 +10,7 @@
 
 @interface GGMyScene : SKScene
 
+@property (nonatomic, strong) NSMutableArray *verticies;
+@property (nonatomic, strong) NSMutableArray *edges;
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32857E4F184489A8002CD8BA /* GGEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 32857E4E184489A8002CD8BA /* GGEdge.m */; };
 		32AB23CE18432BD0006E8690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AB23CD18432BD0006E8690 /* Foundation.framework */; };
 		32AB23D018432BD0006E8690 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AB23CF18432BD0006E8690 /* CoreGraphics.framework */; };
 		32AB23D218432BD0006E8690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AB23D118432BD0006E8690 /* UIKit.framework */; };
@@ -24,6 +25,8 @@
 		32AB23F618432BD0006E8690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AB23D118432BD0006E8690 /* UIKit.framework */; };
 		32AB23FE18432BD0006E8690 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32AB23FC18432BD0006E8690 /* InfoPlist.strings */; };
 		32AB240018432BD0006E8690 /* GraphzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB23FF18432BD0006E8690 /* GraphzTests.m */; };
+		32AB240B1843310F006E8690 /* GGVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB240A1843310F006E8690 /* GGVertex.m */; };
+		32AB240E18433E08006E8690 /* GGJoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AB240D18433E08006E8690 /* GGJoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32857E4D184489A8002CD8BA /* GGEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGEdge.h; sourceTree = "<group>"; };
+		32857E4E184489A8002CD8BA /* GGEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGEdge.m; sourceTree = "<group>"; };
 		32AB23CA18432BD0006E8690 /* Graphz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AB23CD18432BD0006E8690 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32AB23CF18432BD0006E8690 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +65,10 @@
 		32AB23FB18432BD0006E8690 /* GraphzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphzTests-Info.plist"; sourceTree = "<group>"; };
 		32AB23FD18432BD0006E8690 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32AB23FF18432BD0006E8690 /* GraphzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphzTests.m; sourceTree = "<group>"; };
+		32AB24091843310F006E8690 /* GGVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGVertex.h; sourceTree = "<group>"; };
+		32AB240A1843310F006E8690 /* GGVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGVertex.m; sourceTree = "<group>"; };
+		32AB240C18433E08006E8690 /* GGJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGJoint.h; sourceTree = "<group>"; };
+		32AB240D18433E08006E8690 /* GGJoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGJoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +137,12 @@
 				32AB23E518432BD0006E8690 /* GGViewController.m */,
 				32AB23E718432BD0006E8690 /* GGMyScene.h */,
 				32AB23E818432BD0006E8690 /* GGMyScene.m */,
+				32AB24091843310F006E8690 /* GGVertex.h */,
+				32AB240A1843310F006E8690 /* GGVertex.m */,
+				32857E4D184489A8002CD8BA /* GGEdge.h */,
+				32857E4E184489A8002CD8BA /* GGEdge.m */,
+				32AB240C18433E08006E8690 /* GGJoint.h */,
+				32AB240D18433E08006E8690 /* GGJoint.m */,
 				32AB23EA18432BD0006E8690 /* Spaceship.png */,
 				32AB23EC18432BD0006E8690 /* Images.xcassets */,
 				32AB23D618432BD0006E8690 /* Supporting Files */,
@@ -263,9 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AB240E18433E08006E8690 /* GGJoint.m in Sources */,
 				32AB23E918432BD0006E8690 /* GGMyScene.m in Sources */,
 				32AB23E018432BD0006E8690 /* GGAppDelegate.m in Sources */,
 				32AB23E618432BD0006E8690 /* GGViewController.m in Sources */,
+				32AB240B1843310F006E8690 /* GGVertex.m in Sources */,
+				32857E4F184489A8002CD8BA /* GGEdge.m in Sources */,
 				32AB23DC18432BD0006E8690 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +497,7 @@
 				32AB240518432BD0006E8690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32AB240618432BD0006E8690 /* Build configuration list for PBXNativeTarget "GraphzTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +506,7 @@
 				32AB240818432BD0006E8690 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
